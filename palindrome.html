@@ -5,9 +5,11 @@
 </head>
 <body>
     <h2>Palindrome Checker🥰😜</h2>
+    <input type="text" id="palindrome-input" placeholder="Enter a word">
+    <button onclick="checkPalindrome()">Check</button>
     <div id="palindrome-output"></div>
     <script>
-        // Function to check if a word is a palindrome
+        
         function isPalindrome(word) {
             const cleaned = word.toLowerCase();
             const reversed = cleaned.split('').reverse().join('');
@@ -18,11 +20,12 @@
             }
         }
 
-        // Example usage:
-        const testWord = "racecar";
-        const palindromeResult = isPalindrome(testWord);
-        document.getElementById('palindrome-output').textContent = `"${testWord}": ${palindromeResult}`;
-        console.log(palindromeResult);
+        function checkPalindrome() {
+            const input = document.getElementById('palindrome-input').value;
+            const result = isPalindrome(input);
+            document.getElementById('palindrome-output').textContent = `"${input}": ${result}`;
+            console.log(result);
+        }
     </script>
 </body>
 </html>
