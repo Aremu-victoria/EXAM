@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <h2>Palindrome Checker🥰😜</h2>
+    <div id="palindrome-output"></div>
+    <script>
+        // Function to check if a word is a palindrome
+        function isPalindrome(word) {
+            const cleaned = word.toLowerCase();
+            const reversed = cleaned.split('').reverse().join('');
+            if (cleaned === reversed) {
+                return "It is a palindrome";
+            } else {
+                return "It is not a palindrome";
+            }
+        }
+
+        // Example usage:
+        const testWord = "racecar";
+        const palindromeResult = isPalindrome(testWord);
+        document.getElementById('palindrome-output').textContent = `"${testWord}": ${palindromeResult}`;
+        console.log(palindromeResult);
+    </script>
+</body>
+</html>

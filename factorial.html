@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Evaluation</title>
+</head>
+<body>
+    <h2>Factorial Output</h2>
+    <div id="output"></div>
+    <script>
+        function factorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            }
+            let result = 1;
+            for (let i = 2; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+        const num = 4;
+        const factResult = factorial(num);
+        document.getElementById('output').textContent = `Factorial(${num}): ${factResult}`;
+        console.log(factResult); 
+    </script>
+</body>
+</html>

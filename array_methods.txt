@@ -1,0 +1,31 @@
+                    SECTION A
+In programming, an array (or list) is a data structure that stores a collection of elements, 
+typically of the same type, in a specific order.
+ In JavaScript, arrays can hold any type of data and are very flexible.
+
+Five common methods to manipulate arrays in JavaScript:
+
+1. push() – Adds an element to the end of the array.
+   Example:
+   let arr = [1, 2, 3];
+   arr.push(4); // arr is now [1, 2, 3, 4]
+
+2. pop() – Removes the last element from the array.
+   Example:
+   let arr = [1, 2, 3];
+   arr.pop(); // arr is now [1, 2]
+
+3. shift() – Removes the first element from the array.
+   Example:
+   let arr = [1, 2, 3];
+   arr.shift(); // arr is now [2, 3]
+
+4. unshift() – Adds an element to the beginning of the array.
+   Example:
+   let arr = [1, 2, 3];
+   arr.unshift(0); // arr is now [0, 1, 2, 3]
+
+5. splice() – Adds or removes elements at a specific index.
+   Example:
+   let arr = [1, 2, 3, 4];
+   arr.splice(1, 2); // removes 2 elements from index 1; arr is now [1, 4]
